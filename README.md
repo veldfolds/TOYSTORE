@@ -5,7 +5,7 @@ therein is upto date. Comprises of two parts:
 2. REPO
 
 ## API
-Handles the HTTP requests to facilitate CRUD operations on the database
+Handles the HTTP requests to facilitate CRUD operations on the database.
 
 ## REPO
 Responsible for accurate modelling of the domain, that is the Toy entity and it's attributes.
