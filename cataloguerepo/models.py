@@ -10,3 +10,4 @@ class Toy(Document):
     image_url = StringField(),
     year = DateField(),
     stock = IntField()
+    category = StringField()
