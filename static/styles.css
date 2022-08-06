@@ -1,5 +1,22 @@
-.category-box {
-    background-color: #fefefe;
-    height: 450px;
-    border-radius: 40px;
+.carousel {
+    border-radius: 5px;
+    height: 360px;
+    border-radius: 30px;
+}
+
+img {
+    border-radius: 5px;
+}
+
+#catalogue {
+    border-radius: 5px;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#searchBox {
+    border-radius: 20px;
 }
