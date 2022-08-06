@@ -8,6 +8,6 @@ class Toy(Document):
     company = StringField(),
     price = DecimalField(min_value=1),
     image_url = StringField(),
-    year = DateField(),
+    year_manufactured = DateField(),
     stock = IntField()
     category = StringField()
