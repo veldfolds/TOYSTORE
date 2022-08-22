@@ -5,7 +5,7 @@
           <form action="#">
               <div class="input-group mb-3">
                   <input type="text" class="form-control" id="searchBox" placeholder="What are you searching for?" aria-label="searchItem" aria-describedby="button-addon2">
-                  <button class="btn btn-outline-secondary" type="button" id="searchQuery"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button class="btn" type="button" id="searchQuery"><i class="fa-solid fa-magnifying-glass"></i></button>
               </div>
           </form>
       </div>
@@ -16,13 +16,13 @@
             <h3 style="font-family: Roboto, sans-serif; color:rgb(0, 0, 0);">Categories</h3>
             {% for category in categories%}
             <ul>
-            <li>{{ category }}</li>
+            <li><a href="{{ url_for('home') }}">{{ category }}</a></li>
             </ul>
             {% endfor %}
         </div>
     </div>
     <div class="col-md-10 mt-2">
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="static\images\img1.jpg" class="d-block w-100" alt="...">
@@ -31,11 +31,11 @@
             <img src="static\images\img4.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -46,7 +46,7 @@
   <div class="row row-cols-2 row-cols-md-4">
     <div class="col">
       <div class="card">
-        <img class="card-img-top" src="static\images\img4.jpg" alt="Title">
+        <a href="google.com"><img class="card-img-top" src="static\images\img4.jpg" alt="Title"></a>
         <div class="card-body">
           <h4 class="card-title">Toy #4</h4>
           <p class="card-text">Awesome prodct</p>
